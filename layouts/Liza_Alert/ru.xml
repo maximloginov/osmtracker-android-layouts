@@ -1,0 +1,70 @@
+<layouts>
+
+  <!--Main layout, first to be displayed-->
+  <layout name="root">
+
+    <!--Special action Buttons-->
+    <row>
+      <button type="picture" icon="logo_camera"/>
+      <button type="textnote" icon="logo_textnote"/>
+      <button type="voicerec" icon="logo_voice"/>
+    </row>
+
+    <row>
+      <button type="tag" label="Остановка" icon="Liza_Alert_icons/button_misc_bus_stop.png" iconpos="top"/>
+      <button type="tag" label="Камера наблюдения" /> <!-- FIXME: no icon, cannot get it from main res -->
+      <button type="tag" label="Видео экран" /> <!-- FIXME: no icon -->
+    </row>
+
+    <row>
+      <button type="tag" label="След" /> <!-- FIXME: no icon -->
+      <button type="tag" label="Артефакт" /> <!-- FIXME: no icon -->
+    </row>
+
+    <row>
+      <button type="page" label="Транспорт" targetlayout="transport"/> <!-- FIXME: no icon -->
+      <button type="page" label="Дороги" targetlayout="road"/> <!-- FIXME: no icon -->
+    </row>
+
+  </layout>
+
+  <!-- Выходы метро и прочая транспортная инфраструктура -->
+  <layout name="transport">
+
+    <!--Special action Buttons-->
+    <row>
+      <button type="picture" icon="logo_camera"/>
+      <button type="textnote" icon="logo_textnote"/>
+      <button type="voicerec" icon="logo_voice"/>
+    </row>
+
+    <row>
+      <button type="tag" label="Выход метро" /> <!-- FIXME: no icon -->
+      <button type="tag" label="что-нибудь ещё" /> <!-- FIXME: no icon -->
+    </row>
+
+  </layout> <!-- transport -->
+
+  <!-- Перекрестки, развилки, тропы и прочая дорожная инфраструктура -->
+  <layout name="road">
+
+    <!--Special action Buttons-->
+    <row>
+      <button type="picture" icon="logo_camera"/>
+      <button type="textnote" icon="logo_textnote"/>
+      <button type="voicerec" icon="logo_voice"/>
+    </row>
+
+    <row>
+      <button type="tag" label="Перекрёсток" /> <!-- FIXME: no icon -->
+      <button type="tag" label="Т-образный перекрёсток" /> <!-- FIXME: no icon -->
+    </row>
+
+    <row>
+      <button type="tag" label="Круговое движение" /> <!-- FIXME: no icon -->
+      <button type="tag" label="что-нибудь ещё" /> <!-- FIXME: no icon -->
+    </row>
+
+  </layout> <!-- road -->
+
+</layouts>
