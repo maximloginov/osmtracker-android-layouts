@@ -19,11 +19,13 @@
     <row>
       <button type="tag" label="След" /> <!-- FIXME: no icon -->
       <button type="tag" label="Артефакт" /> <!-- FIXME: no icon -->
+      <button type="tag" label="Заброшка" /> <!-- FIXME: no icon -->
     </row>
 
     <row>
       <button type="page" label="Транспорт" targetlayout="transport"/> <!-- FIXME: no icon -->
       <button type="page" label="Дороги" targetlayout="road"/> <!-- FIXME: no icon -->
+      <button type="page" label="Заброшка, типы" targetlayout="road"/> <!-- FIXME: no icon -->
     </row>
 
   </layout>
@@ -66,5 +68,35 @@
     </row>
 
   </layout> <!-- road -->
+
+  <!-- Типы заброшек -->
+  <layout name="abandoned">
+
+    <!--Special action Buttons-->
+    <row>
+      <button type="picture" icon="logo_camera"/>
+      <button type="textnote" icon="logo_textnote"/>
+      <button type="voicerec" icon="logo_voice"/>
+    </row>
+
+    <row> <!-- number 2 -->
+      <button type="tag" label="Колодец" /> <!-- FIXME: no icon -->
+      <button type="tag" label="Котлован" /> <!-- FIXME: no icon -->
+      <button type="tag" label="Котлован с фунтаментом" /> <!-- FIXME: no icon -->
+    </row>
+
+    <row> <!-- number 3 -->
+      <button type="tag" label="Сгоревшее здание" /> <!-- FIXME: no icon -->
+      <button type="tag" label="Недостроенное здание" /> <!-- FIXME: no icon -->
+      <button type="tag" label="Полуразрушенное здание" /> <!-- FIXME: no icon -->
+    </row>
+
+    <row> <!-- number 4 -->
+      <button type="tag" label="Останки транспорта" /> <!-- FIXME: no icon -->
+      <button type="tag" label="Неиспользуемый мост/тоннель" /> <!-- FIXME: no icon -->
+      <button type="tag" label="Затопленный объект" /> <!-- FIXME: no icon -->
+    </row>
+
+  </layout> <!-- abandoned -->
 
 </layouts>
